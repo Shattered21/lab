@@ -15,7 +15,7 @@ class Account:
         if amount <= 0:
             return False
         else:
-            self.__account_balance + amount
+            self.__account_balance = self.__account_balance + amount
             return True
 
     def withdraw(self, amount: float) -> bool:
@@ -23,10 +23,10 @@ class Account:
         Method that reduces the amount of account balance
         :param amount: amount user wants to take out of account balance
         '''
-        if (amount <= 0) or (amount < self.__account_balance):
+        if (amount <= 0) or (amount > self.__account_balance):
             return False
         else:
-            self.__account_balance - amount
+            self.__account_balance = self.__account_balance - amount
             return True
 
     def get_balance(self) -> float:
