@@ -27,7 +27,6 @@ class Account:
         return self.__account_name
 
 
-if __name__ == '__main__':
 
 
 
