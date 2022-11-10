@@ -34,7 +34,7 @@ class Account:
         Method to get account balance
         :returns: account balance
         '''
-        return self.__account_balance
+        return self.__account_balance  # Returns the account balance
 
 
     def get_name(self) -> str:
